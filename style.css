@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.81);
+}
+
+body {
+    background-image: url('img/banda.webp'); 
+    background-size: cover;               
+    background-repeat: no-repeat;       
+    background-attachment: fixed;         
+    background-position: center;         
+}
+
+
+.navbar{
+    display: flex;
+    background-color: rgba(37, 34, 34, 0.658);
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    width: 180px;
+    height: auto;
+    
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 20px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+}
+
+.text-head{
+    font-size: 25px;
+    background-color: rgb(43, 40, 40);
+    color: white;
+}
+
+.info{
+    display: flex;
+    gap: 20px;
+}
+
+
+.text{
+    text-align: center;
+}
+
+.text h3:hover{
+    color: #000;
+    transition: 0.3s;
+}
+
+.text p:hover{
+    color: #000;
+    transition: 0.3s;
+}
+
+.text h3{
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.text p{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.info img{
+    margin: 30px 0;
+    margin-left: 0;
+    width: 500px;
+}
+
+.info img:hover{
+    transform: scale(1.5,1.5);
+    transition: 0.5s;
+}
+
+.event-text{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    
+}
+
+.event-text h2{
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.event-text p{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #333; 
+    padding: 10px;           
+    text-align: left;       
+}
+
+table th {
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+table tr{
+    background-color: white;
+}
+
+table tr:hover {
+    background-color: #b4abab;
+}
+
+footer{
+    height: auto;
+    background-color: #000;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p{
+    color: white;
+    font-size: 20px;
+}
+
+.links-footer a img{
+    height: 40px;
+    width: 40px;
+    padding: 0 20px;
+
+}
+
+@media (max-width: 768px){
+    .head img{
+        height: 300px;
+        width: auto;
+    }
+    .info img{
+        height: 600px;
+        width: 250px;
+    }
+    .event-text{
+        width: 500px;
+    }
+    .text-head{
+        width: 495px;
+    }
+    .text p{
+        width: 200px;
+    }
+    footer{
+        width: 495px;
+    }
+    table{
+        width: 495px;
+    }
+}
